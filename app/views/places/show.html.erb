@@ -14,12 +14,13 @@
           <h4><%= sub_entry["occurred_on"] %></h4>
           <% if sub_entry.uploaded_image.attached? %>
             <%# use url_for(sub_entry.uploaded_image) as attached file's url %>
+            <h5><%= sub_entry["description"] %></h5>
             <img src="<%= url_for(sub_entry.uploaded_image) %>" class="img-fluid">
           <% else %>
             <%# otherwise display original image url from database column %>
+            <h5><%= sub_entry["description"] %></h5>
             <img src="<%= sub_entry["image"] %>" class="img-fluid">
           <% end %>
-          <h5><%= sub_entry["description"] %></h5>
         </div>
       </div>
     <% end %>
@@ -30,4 +31,4 @@
   <a href="/places">Back to All Places</a>
 </p>
 
-<% end%>
+<% end %>
