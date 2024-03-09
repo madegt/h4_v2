@@ -1,0 +1,5 @@
+
+.entry-container {
+  height: 300px; /* Adjust the height as needed */
+  overflow: hidden; /* Prevents the container from expanding to fit large images */
+}
