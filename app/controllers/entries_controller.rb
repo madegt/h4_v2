@@ -15,4 +15,8 @@ class EntriesController < ApplicationController
     redirect_to "/places/#{@entry["place_id"]}"
   end
 
+  def show
+    @entry = Entry.find(params[:id]) # Example query to retrieve entry data
+  end
+
 end
