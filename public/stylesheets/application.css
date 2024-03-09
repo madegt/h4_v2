@@ -3,3 +3,9 @@
   height: 300px; /* Adjust the height as needed */
   overflow: hidden; /* Prevents the container from expanding to fit large images */
 }
+
+.btn-custom {
+  background-color: black;
+  color: white;
+  border-color: black; /* Optional: if you want to change the border color */
+}
